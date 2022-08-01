@@ -11,3 +11,6 @@ else:
   cost_ground_shipping = weight * 4.75 + 20
 
 print("Ground shipping $", cost_ground_shipping)
+
+cost_premium_shipping = 125.00
+print("Ground shipping Premium $", cost_premium_shipping)
