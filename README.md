@@ -1,5 +1,5 @@
 ## Python learning
-This are small projects for a python tutorial
+These are small projects for a python tutorial
 
 ## Context
 
