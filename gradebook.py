@@ -5,3 +5,12 @@ subjects = ['physics', 'calculus', 'poetry', 'history']
 
 grades = [98, 97, 85, 88]
 
+# combine subjects and grades
+gradebook = [
+  ['physics', 98],
+  ['calculus', 97],
+  ['poetry', 85],
+  ['history', 88]
+]
+
+print(gradebook)
