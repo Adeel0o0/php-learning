@@ -20,3 +20,13 @@ gradebook.append(['computer science', 100])
 
 gradebook.append(['visual arts', 93])
 
+#modifying the gradebook
+
+gradebook[5][1] = 98
+
+#change numeric value to pass/fail option
+
+gradebook[2].remove(85)
+gradebook[2].append("Pass")
+
+print(gradebook)
