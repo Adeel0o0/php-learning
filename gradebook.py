@@ -29,4 +29,8 @@ gradebook[5][1] = 98
 gradebook[2].remove(85)
 gradebook[2].append("Pass")
 
-print(gradebook)
+# combine gradebooks
+
+full_gradebook = last_semester_gradebook + gradebook
+
+print(full_gradebook)
