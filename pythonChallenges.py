@@ -23,3 +23,17 @@ def more_frequent_item(lst, item1, item2):
         return item2
   
 print(more_frequent_item([2, 3, 3, 2, 3, 2, 3, 2, 3], 2, 3))
+
+
+#Double Index
+
+def double_index(lst, index):
+    if index >= len(lst):
+        return lst
+    else:
+        newList = lst[0:index]
+        newList.append(lst[index] * 2)
+        newList = newList + lst[index+1:]   
+        return newList
+  
+print(double_index([3, 8, -10, 12], 2))
