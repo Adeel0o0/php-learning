@@ -49,3 +49,14 @@ def middle_element(lst):
     return lst[int(len(lst)/2)]
 
 print(middle_element([5, 2, -10, -4, 4, 5]))
+
+#Divisible by Ten
+def divisible_by_ten(nums):
+  count = 0
+  for num in nums:
+    if (num % 10 == 0):
+      count += 1
+  return count
+      
+
+print(divisible_by_ten([20, 25, 30, 35, 40]))
