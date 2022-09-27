@@ -71,3 +71,13 @@ def delete_starting_evens(lst):
 
 
 print(delete_starting_evens([4, 8, 10, 11, 12, 15]))
+
+#Odd Indices
+
+def odd_indices(lst):
+  empty_list = []
+  for list in range(1, len(lst), 2):
+    empty_list.append(lst[list])
+  return empty_list
+
+print(odd_indices([4, 3, 7, 10, 11, -2]))
