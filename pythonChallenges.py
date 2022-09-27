@@ -60,3 +60,14 @@ def divisible_by_ten(nums):
       
 
 print(divisible_by_ten([20, 25, 30, 35, 40]))
+
+
+#Delete Start Even Numbers
+
+def delete_starting_evens(lst):
+  while (len(lst) > 0 and lst[0] % 2 == 0):
+    lst = lst[1:]
+  return lst
+
+
+print(delete_starting_evens([4, 8, 10, 11, 12, 15]))
