@@ -120,3 +120,14 @@ def over_nine_thousand(lst):
   
  
 print(over_nine_thousand([8000, 900, 120, 5000]))
+
+#Max_num
+
+def max_num(nums):
+  maxVal = nums[0]
+  for number in nums:
+    if number > maxVal:
+      maxVal = number
+  return maxVal
+
+print(max_num([50, -10, 0, 75, 20]))
