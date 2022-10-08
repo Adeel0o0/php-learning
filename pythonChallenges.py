@@ -131,3 +131,14 @@ def max_num(nums):
   return maxVal
 
 print(max_num([50, -10, 0, 75, 20]))
+
+#Same values
+
+def same_values(lst1, lst2):
+  newList = []
+  for list in range(len(lst1)):
+      if lst1[list] == lst2[list]:
+        newList.append(list)
+  return newList
+
+print(same_values([5, 1, -10, 3, 3], [5, 10, -10, 3, 5]))
