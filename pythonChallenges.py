@@ -155,3 +155,13 @@ def reversed_list(lst1, lst2):
 
 print(reversed_list([1, 2, 3], [3, 2, 1]))
 print(reversed_list([1, 5, 3], [3, 2, 1]))
+
+
+#Simple Math challenges
+
+def tenth_power(num):
+  return pow(num, 10)
+
+print(tenth_power(1))
+print(tenth_power(0))
+print(tenth_power(2))
