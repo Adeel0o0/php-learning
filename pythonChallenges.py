@@ -165,3 +165,14 @@ def tenth_power(num):
 print(tenth_power(1))
 print(tenth_power(0))
 print(tenth_power(2))
+
+
+#dog years
+
+def dog_years(name, age):
+  age_of_dog = age * 7
+  return name + ", " + "you are " + str(age_of_dog) + " years old in dog years"
+
+print(dog_years("Lola", 16))
+
+print(dog_years("Baby", 0))
