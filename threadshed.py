@@ -115,5 +115,10 @@ for transaction in daily_transactions:
   daily_transactions_split.append(transaction.split(', '))
 
 transactions_clean = []
-for transactions in daily_transactions_split:
-  daily_transactions_split.append(transaction.split('.'))
+for transaction in daily_transactions_split:
+  transaction_clean = []
+  for data in transaction:
+    transaction_clean.append(data.strip(' '))   
+    transactions_clean.append(transaction_clean)
+
+    
