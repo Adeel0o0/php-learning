@@ -109,3 +109,9 @@ green&white;,;09/15/17,   Gail Phelps   ;,;$30.52
 daily_sales_replaced = daily_sales.replace(';,;', '.')
 
 daily_transactions = daily_sales_replaced.split()
+
+daily_transactions_split = []
+for transaction in daily_transactions:
+  daily_transactions_split.append(transaction.split(', '))
+
+print(daily_transactions_split)  
