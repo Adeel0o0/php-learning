@@ -114,4 +114,6 @@ daily_transactions_split = []
 for transaction in daily_transactions:
   daily_transactions_split.append(transaction.split(', '))
 
-print(daily_transactions_split)  
+transactions_clean = []
+for transactions in daily_transactions_split:
+  daily_transactions_split.append(transaction.split('.'))
