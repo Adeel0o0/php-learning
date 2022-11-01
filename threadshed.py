@@ -112,7 +112,7 @@ daily_transactions = daily_sales_replaced.split()
 
 daily_transactions_split = []
 for transaction in daily_transactions:
-  daily_transactions_split.append(transaction.split(', '))
+  daily_transactions_split.append(transaction.split('.'))
 
 transactions_clean = []
 for transaction in daily_transactions_split:
@@ -121,4 +121,3 @@ for transaction in daily_transactions_split:
     transaction_clean.append(data.strip(' '))   
     transactions_clean.append(transaction_clean)
 
-    
