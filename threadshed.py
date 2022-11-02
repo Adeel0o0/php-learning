@@ -136,4 +136,16 @@ total_sales = 0
 for sale in sales:
   total_sales += float(sale.strip("$"))
 
-print(total_sales)
+#print(total_sales)
+
+thread_sold_split = []
+for item in thread_sold:
+  for color in item.split("&"):
+    thread_sold_split.append(color)
+
+def color_count(color):
+  color_total = 0
+  for thread_color in thread_sold_split:
+    if color == thread_color:
+      color_total += 1
+  return color_total
