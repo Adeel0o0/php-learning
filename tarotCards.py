@@ -8,3 +8,5 @@ spread["past"] = tarot.pop(13)
 spread["present"] = tarot.pop(22)
 spread["future"] = tarot.pop(10)
 
+for key, value in spread.items():
+  print("Your "+ key + " is the " + value + " card.")
