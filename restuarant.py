@@ -3,6 +3,16 @@ class Franchise:
     self.address = address
     self.menus = menus
 
+  def __repr__(self):
+    return 'The address is ' + self.address
+
+  def available_menus(self, time):
+    available_menu = []
+    for menu in self.menus:
+      if time >= menu.start_time and time <= menu.end_time:
+        available_menu.append(menu)
+    return available_menu 
+
 
 class Menu:
   def __init__(self, name, items, start_time, end_time):
