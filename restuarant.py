@@ -1,3 +1,9 @@
+class Franchise:
+  def __init__(self, address, menus):
+    self.address = address
+    self.menus = menus
+
+
 class Menu:
   def __init__(self, name, items, start_time, end_time):
     self.name = name
@@ -40,3 +46,8 @@ kids_items = {
 
 kids_menu = Menu('kids', kids_items, 1100, 2100)
 
+menus = [brunch_menu, early_bird_menu, dinner_menu, kids_menu]
+
+flagship_store = Franchise('1232 West End Road', menus)
+
+new_installment = Franchise('12 East Mulberry Street', menus)
