@@ -42,7 +42,7 @@ early_bird_items = {
   'salumeria plate': 8.00, 'salad and breadsticks (serves 2, no refills)': 14.00, 'pizza with quattro formaggi': 9.00, 'duck ragu': 17.50, 'mushroom ravioli (vegan)': 13.50, 'coffee': 1.50, 'espresso': 3.00,
 }
 
-early_bird = Menu('Early bird', early_bird_items, 1500, 1800)
+early_bird_menu = Menu('Early bird', early_bird_items, 1500, 1800)
 
 dinner_items = {
   'crostini with eggplant caponata': 13.00, 'caesar salad': 16.00, 'pizza with quattro formaggi': 11.00, 'duck ragu': 19.50, 'mushroom ravioli (vegan)': 13.50, 'coffee': 2.00, 'espresso': 3.00,
