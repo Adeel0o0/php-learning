@@ -26,3 +26,9 @@ def count_char_x(word, x):
 print(count_char_x("mississippi", "s"))
 
 print(count_char_x("mississippi", "m"))
+
+
+#3. Check Name
+
+def check_for_name(sentence, name):
+  return name.lower() in sentence.lower()
