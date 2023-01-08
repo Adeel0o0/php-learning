@@ -32,3 +32,12 @@ print(count_char_x("mississippi", "m"))
 
 def check_for_name(sentence, name):
   return name.lower() in sentence.lower()
+
+
+#4 Every other letter
+
+def every_other_letter(word):
+  other_letter = ""
+  for letter in range(0, len(word), 2):
+    other_letter += word[letter]
+  return other_letter
