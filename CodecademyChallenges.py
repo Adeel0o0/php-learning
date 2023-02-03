@@ -72,3 +72,18 @@ print(frequency_dictionary(["apple", "apple", "cat", 1]))
 # should print {"apple":2, "cat":1, 1:1}
 print(frequency_dictionary([0,0,0,0,0]))
 # should print {0:5}
+
+
+#Unique values
+
+def unique_values(my_dictionary):
+  unique_values = []
+  for value in my_dictionary.values():
+    if value not in unique_values:
+      unique_values.append(value)
+  return len(unique_values)
+
+print(unique_values({0:3, 1:1, 4:1, 5:3}))
+# should print 2
+print(unique_values({0:3, 1:3, 4:3, 5:3}))
+# should print 1
