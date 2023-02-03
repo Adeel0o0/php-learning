@@ -87,3 +87,19 @@ print(unique_values({0:3, 1:1, 4:1, 5:3}))
 # should print 2
 print(unique_values({0:3, 1:3, 4:3, 5:3}))
 # should print 1
+
+#count first letter
+
+def count_first_letter(names):
+  letters = {}
+  for key in names.keys():
+    first_letter = key[0]
+    if first_letter not in letters:
+      letters[first_letter] = 0
+    letters[first_letter] += len(names[key])
+  return letters
+  
+print(count_first_letter({"Stark": ["Ned", "Robb", "Sansa"], "Snow" : ["Jon"], "Lannister": ["Jaime", "Cersei", "Tywin"]}))
+# should print {"S": 4, "L": 3}
+print(count_first_letter({"Stark": ["Ned", "Robb", "Sansa"], "Snow" : ["Jon"], "Sannister": ["Jaime", "Cersei", "Tywin"]}))
+# should print {"S": 7}
