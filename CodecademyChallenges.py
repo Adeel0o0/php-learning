@@ -58,3 +58,17 @@ print(word_length_dictionary(["apple", "dog", "cat"]))
 print(word_length_dictionary(["a", ""]))
 # should print {"a": 1, "": 0}
 
+#6 frequency counts
+
+def frequency_dictionary(words):
+  frequency = {}
+  for word in words:
+    if word not in frequency:
+      frequency[word] = 0
+    frequency [word] += 1
+  return frequency
+
+print(frequency_dictionary(["apple", "apple", "cat", 1]))
+# should print {"apple":2, "cat":1, 1:1}
+print(frequency_dictionary([0,0,0,0,0]))
+# should print {0:5}
