@@ -41,3 +41,20 @@ def every_other_letter(word):
   for letter in range(0, len(word), 2):
     other_letter += word[letter]
   return other_letter
+
+
+#5 Word length dict
+
+def word_length_dictionary(words):
+  word_length = {}
+  for word in words:
+    new_key = word
+    new_value = len(new_key)
+    word_length.update({new_key: new_value})
+  return word_length
+  
+print(word_length_dictionary(["apple", "dog", "cat"]))
+# should print {"apple":5, "dog": 3, "cat":3}
+print(word_length_dictionary(["a", ""]))
+# should print {"a": 1, "": 0}
+
