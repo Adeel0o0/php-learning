@@ -2,6 +2,10 @@
 #1. Setting Up Our Robot
 
 class DriveBot:
+    all_disabled = False
+    latitude = -999999
+    longitude = -999999
+
   def __init__(self, motor_speed = 0, direction = 180, sensor_range = 10):
         self.motor_speed = motor_speed
         self.direction = direction
@@ -25,8 +29,16 @@ robot_1.sensor_range = 20
 # print(robot_1.sensor_range)
 
 robot_2 = DriveBot(35, 75, 25)
+robot_3 = DriveBot(20, 60, 10)
 
-print(robot_2.motor_speed)
-print(robot_2.direction)
-print(robot_2.sensor_range)
+
+DriveBot.longitude = 50.0
+DriveBot.latitude = -50.0
+DriveBot.all_disabled = True
+
+print(robot_1.latitude)
+print(robot_2.longitude)
+print(robot_3.all_disabled)
+
+
 
