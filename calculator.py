@@ -2,25 +2,49 @@ def add (a, b):
     answer = a + b
     print(str(a) + " + ", str(b), " = " + str(answer))
 
-#add (5, 7)
 
-
-def minus (a, b):
+def sub (a, b):
     answer = a - b
     print(str(a) + " - ", str(b), " = " + str(answer))
-
-#minus (12, 2)
 
 
 def multiply(a, b):
     answer = a * b
     print(str(a) + " x ", str(b), " = " + str(answer))
 
-#multiply (10, 10)
 
 def divide(a, b):
     answer = a / b
     print(str(a) + " / ", str(b), " = " + str(answer))
 
-divide (15, 5)
+print ("A, addition")
+print ("B, subtraction")
+print ("C, multiplication")
+print ("D, division")
+print ("E, exit")
 
+choice = input("Enter your choice: ")
+if choice == "a" or choice == "A":
+    print("Addition")
+    a = int(input("Enter your first number: "))
+    b = int(input("Enter your second number: "))
+    add (a, b)
+elif choice == "b" or choice == "B":
+    print('Substraction')
+    a = int(input("Enter your first number: "))
+    b = int(input("Enter your second number: "))
+    sub (a,b)
+elif choice == "c" or choice == "C":
+    print('Multiplication')
+    a = int(input("Enter your first number: "))
+    b = int(input("Enter your second number: "))
+    multiply (a,b)
+elif choice == "d" or choice == "D":
+    print('Division')
+    a = int(input("Enter your first number: "))
+    b = int(input("Enter your second number:"))
+    multiply (a,b)
+elif choice == "e" or choice == "E":
+    print('Program ended')
+    quit()
+   
