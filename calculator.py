@@ -16,4 +16,11 @@ def multiply(a, b):
     answer = a * b
     print(str(a) + " x ", str(b), " = " + str(answer))
 
-multiply (10, 10)
+#multiply (10, 10)
+
+def divide(a, b):
+    answer = a / b
+    print(str(a) + " / ", str(b), " = " + str(answer))
+
+divide (15, 5)
+
