@@ -1,5 +1,5 @@
 def main():
-    print("Welcome to the email slicer")
+    print("Welcome to the email slicer") 
     print("")
 
     email_input = input("Input your email address")
@@ -7,9 +7,11 @@ def main():
     (username, domain) = email_input.split("@")
     (domain, extension) = domain.split(".")
 
-    print("username : ", username)
-    print("Domain : ", domain)
-    print("Extension: " , extension)
+    print(f"Your username is {username} & domain is {domain} and extension is {extension}")
+
+    #print("username : ", username)
+    #print("Domain : ", domain)
+    #print("Extension: " , extension)
 
 while True:    
     main()
