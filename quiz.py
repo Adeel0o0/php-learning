@@ -47,4 +47,4 @@ for key, value in quiz.items():
         print('Your score is ' + str(score))
         print('')
 
-print('Your score is ' + str(score) + ' out of 7')
+print('Your total score is ' + str(score) + ' out of 7')
