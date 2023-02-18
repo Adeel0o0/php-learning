@@ -48,3 +48,4 @@ for key, value in quiz.items():
         print('')
 
 print('Your total score is ' + str(score) + ' out of 7')
+print('Your percentage is ' + str(score/7 * 100) + '%')
