@@ -4,7 +4,7 @@ import random
 characters = list(string.ascii_letters + string.digits + "!@£$%^&")
 
 def generate_password():
-    password_length = int(input("How long do you want your password to be?"))
+    password_length = int(input("How long do you want your password to be? "))
 
     random.shuffle(characters)
 
@@ -19,4 +19,13 @@ def generate_password():
 
     print(password)
 
-option = input("Do you want to genenrate a password? (Yes/No)")
+option = input("Do you want to generate a password? (Yes/No): ")
+
+if option == "Yes":
+    generate_password()
+elif option == "No":
+    print("Program ended")
+    quit()
+else:
+    print("Invalid input, please inout Yes or No")
+    quit()
